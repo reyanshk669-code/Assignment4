@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Create Account</h2>
+        
+        <!-- Message Box for Errors and Success -->
+        <div id="messageBox" class="message-box" style="display: none;"></div>
+
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="userName">Full Name *</label>
+                <input type="text" id="userName" placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="userEmail">Email Address *</label>
+                <input type="text" id="userEmail" placeholder="user@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="userPhone">Phone Number *</label>
+                <input type="number" id="userPhone" placeholder="10-digit phone number">
+            </div>
+
+            <div class="form-group">
+                <label for="userPassword">Password *</label>
+                <div class="password-wrapper">
+                    <input type="password" id="userPassword" placeholder="Enter your password">
+                    <button type="button" id="togglePassword">Show</button>
+                </div>
+                <small class="hint">Min 8 characters, 1 uppercase, 1 lowercase, 1 number.</small>
+            </div>
+
+            <button type="submit" id="submitBtn">Register</button>
+        </form>
+    </div>
+
+    <!-- Link to custom script -->
+    <script src="script.js"></script>
+</body>
+</html>
